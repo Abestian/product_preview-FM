@@ -3,6 +3,13 @@
 // - Font size (paragraph): 14px
 // fonts: montserrat 500, 700 and fraunces 700
 
+@mixin fancyFont {
+	font-family: 'Fraunces', serif;
+	font-size: clamp(2.5rem, 9vw, 3.2rem);
+	font-weight: 700;
+	line-height: 3.2rem;
+}
+
 * {
 	box-sizing: 'border-box';
 	margin: 0;
@@ -18,18 +25,84 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	color: $darkGrayishBlue;
 	background-color: $cream;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
 }
 
 .product {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: start;
+	margin: 0 1.25em;
 	background-color: $white;
+	border-radius: 10px;
+	overflow: hidden;
 
-	img {
+	&__image {
 		width: 100%;
 		height: auto;
+	}
+
+	&__type {
+		order: -1;
+		font-size: 1.3rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.4rem;
+	}
+
+	&__name {
+		@include fancyFont;
+		margin: 0.4em 0;
+		color: $veryDarkBlue;
+	}
+
+	&__price {
+		width: 50%;
+		text-decoration-line: line-through;
+		line-height: 3.2rem;
+
+		&--discounted {
+			@include fancyFont;
+			margin: 0.7em 0;
+			color: $darkCyan;
+			text-decoration: none;
+		}
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1.5em;
+	}
+
+	.prices {
+		display: flex;
+		align-items: center;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1em;
+		background-color: $darkCyan;
+		border: 1px solid $darkCyan;
+		border-radius: 8px;
+
+		&__icon {
+			position: relative;
+			right: 1em;
+		}
+
+		&__text {
+			color: $white;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+		}
 	}
 }
