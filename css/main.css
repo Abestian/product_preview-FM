@@ -79,6 +79,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1em;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   background-color: hsl(158, 36%, 37%);
   border: 1px solid hsl(158, 36%, 37%);
   border-radius: 8px;
@@ -88,11 +91,6 @@ body {
 .product .button__icon {
   position: relative;
   right: 1em;
-}
-.product .button__text {
-  color: hsl(0, 0%, 100%);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
 }
 .product .button:hover, .product .button:focus {
   outline: none;

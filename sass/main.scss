@@ -92,6 +92,9 @@ body {
 		justify-content: center;
 		align-items: center;
 		padding: 1em;
+		color: $white;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
 		background-color: $darkCyan;
 		border: 1px solid $darkCyan;
 		border-radius: 8px;
@@ -101,12 +104,6 @@ body {
 		&__icon {
 			position: relative;
 			right: 1em;
-		}
-
-		&__text {
-			color: $white;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: 700;
 		}
 
 		&:hover,
