@@ -2,7 +2,7 @@
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/learning-paths/building-responsive-layouts--z1qCXVqkD/steps/673cfd32d54b5cb1deaa35fd/challenge/refactor)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/product-preview-responsive-flexbox-sass-bem--YhpCwmS3W)
 - Live Site URL: [Live site](https://abestian.github.io/product_preview-FM/)
 
 <!-- ABOUT THE PROJECT -->
