@@ -37,6 +37,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 1.25em;
+	max-width: 24em;
 	background-color: $white;
 	border-radius: 10px;
 	overflow: hidden;
@@ -82,6 +83,7 @@ body {
 
 	.prices {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
 
@@ -93,6 +95,8 @@ body {
 		background-color: $darkCyan;
 		border: 1px solid $darkCyan;
 		border-radius: 8px;
+		transition: background-color 0.3s;
+		cursor: pointer;
 
 		&__icon {
 			position: relative;
@@ -104,5 +108,36 @@ body {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 700;
 		}
+	}
+}
+
+@media (width > 576px) {
+	.product {
+		flex-direction: row;
+		max-width: 45em;
+
+		&__img {
+			flex: 1 0 50%;
+		}
+
+		&__image {
+			height: 100%;
+		}
+
+		&__name {
+			font-size: 3.4rem;
+		}
+
+		&__price {
+			text-align: center;
+
+			&__discounted {
+				text-align: left;
+			}
+		}
+	}
+
+	.text {
+		margin: 0.9em;
 	}
 }
