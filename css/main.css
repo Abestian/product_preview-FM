@@ -94,6 +94,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+.product .button:hover, .product .button:focus {
+  outline: none;
+  background-color: hsl(158, 38%, 24%);
+}
 
 @media (width > 576px) {
   .product {
